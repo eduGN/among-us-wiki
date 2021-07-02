@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group >
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/map"
+            android:title="Mapas"
+            />
+        <item
+            android:id="@+id/nav_tasks"
+            android:icon="@drawable/task"
+            android:title="Tareas"
+            />
+        <item
+            android:id="@+id/nav_rooms"
+            android:icon="@drawable/rooms"
+            android:title="Ubicaciones" />
+
+        <item
+            android:id="@+id/nav_roles"
+            android:icon="@drawable/rolesicon"
+            android:title="Roles" />
+
+        <item
+            android:id="@+id/nav_colors"
+            android:icon="@drawable/colorsicon"
+            android:title="Colores" />
+
+        <item
+            android:id="@+id/nav_abilities"
+            android:icon="@drawable/abilitiesicon"
+            android:title="Habilidades" />
+
+    </group>
+
+    <group android:id="@+id/separator">
+
+        <item
+            android:id="@+id/nav_hacks"
+           android:icon="@drawable/hacks"
+            android:title="Trucos y Consejos"
+            />
+
+        <item
+        android:id="@+id/nav_contact"
+        android:icon="@drawable/msg"
+        android:title="Contacta con nosotros" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="Sobre el juego" />
+
+    </group>
+
+        <item
+            android:id="@+id/nav_footer1"
+            android:title=""/>
+        <item
+            android:id="@+id/nav_footer2"
+            android:title=""/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:orderInCategory="100"
+            android:title="@null"
+            app:actionLayout="@layout/nav_footer"
+            app:showAsAction="always"/>
+
+</menu>

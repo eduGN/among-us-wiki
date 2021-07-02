@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Clickable"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp15"
+    android:layout_marginHorizontal="@dimen/dp10"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp5"
+    app:cardCornerRadius="@dimen/dp20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dp10">
+
+
+        <!--<TextView
+            android:id="@+id/tv_maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp15"
+            android:text="Map name"
+            android:textColor="@color/loading"
+            android:textSize="@dimen/dp20" />-->
+
+        <ImageView
+            android:id="@+id/iv_iconmaps"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            android:padding="@dimen/dp5"
+            android:layout_marginVertical="@dimen/dp10"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:layout_marginVertical="@dimen/dp10"
+            app:cardCornerRadius="@dimen/dp20">
+
+            <ImageView
+                android:id="@+id/iv_maps"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+
+

@@ -1,0 +1,46 @@
+
+import android.view.LayoutInflater
+import android.view.TextureView
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.example.amonguswiki.R
+import com.example.amonguswiki.favorites.Article
+import com.squareup.picasso.Picasso
+
+
+class AbilitiesAdapter(private val data: List<Article>, val onClick:(Article) -> Unit) :
+    RecyclerView.Adapter<AbilitiesAdapter.ViewHolder>() {
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.item_ability, parent, false)
+        return ViewHolder(v)
+    }
+
+    override fun getItemCount(): Int = data.size
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val ability = data[position]
+        holder.bind(ability)
+        holder.itemView.setOnClickListener {
+            onClick(ability)
+
+        }
+    }
+
+    inner class ViewHolder(var view: View) : RecyclerView.ViewHolder(view) {
+
+        fun bind(data: Article) {
+
+            val tv_abilities=view.findViewById<TextView>(R.id.tv_abilities)
+            val iv_abilities=view.findViewById<ImageView>(R.id.iv_abilities)
+
+            tv_abilities.text=data.name
+            Picasso.get().load(data.img).into(iv_abilities)
+        }
+
+
+    }
+}

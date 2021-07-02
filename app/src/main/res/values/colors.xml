@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#499374</color>
+    <color name="colorPrimaryDark2">#021C1E</color>
+    <color name="app">#021C1E</color>
+    <color name="colorPrimaryDark">#69B98F</color>
+    <color name="colorPrimary2">#004445</color>
+    <color name="colorAccent">#047A13</color>
+    <color name="loading">#FFFFFF</color>
+    <color name="loading2">#049F18</color>
+    <color name="link">#008FEF</color>
+    <color name="blue">#194EA1</color>
+    <color name="icon">#2C7873</color>
+    <color name="box">#DA3ADC2E</color>
+    <color name="bg_gw">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="background">#2D2D2D</color>
+    <color name="backgroundDark">#1E1E1E</color>
+    <color name="toolbar">#021C1E</color>
+</resources>

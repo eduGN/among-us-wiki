@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1053684733022",
+    "firebase_url": "https://among-us-8a1d9.firebaseio.com",
+    "project_id": "among-us-8a1d9",
+    "storage_bucket": "among-us-8a1d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053684733022:android:b366852198942a72d1d0cf",
+        "android_client_info": {
+          "package_name": "com.example.amonguswiki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053684733022-rh7lman77a7an6mvr2h4csksrjin82s0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.amonguswiki",
+            "certificate_hash": "a1932b2715e8473cae0c1d8e22ae59506a3c7a92"
+          }
+        },
+        {
+          "client_id": "1053684733022-l1j1ujviaiq3dtqf7bvq0hf3309l2a3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIgK3vs9DpIEINBY3R7lmGzSqDpkGVfVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053684733022-l1j1ujviaiq3dtqf7bvq0hf3309l2a3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

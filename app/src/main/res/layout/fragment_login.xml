@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginFragment"
+    android:background="@color/colorPrimaryDark2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dp25"
+        android:paddingTop="@dimen/dp35">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/audiowide"
+            android:text="@string/bienvenida"
+            android:textAlignment="center"
+            android:textColor="@color/loading"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_marginVertical="@dimen/dp20"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_login"
+            android:layout_gravity="center_horizontal" />
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:hint="@string/email"
+            app:startIconDrawable="@drawable/email_black"
+            app:boxStrokeColor="@color/colorPrimary"
+            app:startIconTint="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@android:color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:hint="@string/contrasenna"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/ic_key"
+            app:boxStrokeColor="@color/colorPrimary"
+            app:startIconTint="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@android:color/white">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:text="@string/iniciar_sesion"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/colorPrimary" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/googlelogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/dp5"
+            android:backgroundTint="@android:color/darker_gray"
+            style="@style/Clickable">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/dp10"
+            android:paddingVertical="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icongoogle" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="CONTINUAR CON GOOGLE"
+                android:textAlignment="center"
+                android:paddingRight="@dimen/dp15"
+                android:textColor="@color/colorPrimaryDark2" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_cuenta"
+                android:textColor="@color/loading" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:id="@+id/signin"
+                android:text="@string/registrate"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rememberPass"
+        android:text="@string/rememberPass"
+        android:textColor="@color/link"
+        style="@style/Widget.MaterialComponents.Button.TextButton" />
+
+    </RelativeLayout>
+
+
